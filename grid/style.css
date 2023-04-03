@@ -1,0 +1,57 @@
+.lvl_1, .lvl_2, .lvl_3, .lvl_4, .lvl_5, .lvl_6, .lvl_7{
+    border: 5px solid black;
+    padding: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px 200px 200px;
+}
+
+.lvl_1{
+    background-color: brown;
+    grid-column-start: 4;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.lvl_2{
+    background-color: antiquewhite;
+}
+
+.lvl_3{
+    background-color: orangered;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.lvl_4{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.lvl_5{
+    background-color: antiquewhite;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.lvl_6{
+    background-color: antiquewhite;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.lvl_7{
+    background-color: antiquewhite;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
