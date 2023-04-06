@@ -1,0 +1,21 @@
+.btn_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e0041;
+}
+
+.svg_fon{
+    margin: 1% 3% 1% 3%;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    transform: skew(-10deg);
+    border-radius: 4px;
+    box-shadow: 2px 5px 10px rgb(195, 0, 255);
+    background-color: #e2b0ff;
+}
+
+.svg_fon:hover{
+    background-color: #9163fd;
+}
