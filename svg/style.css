@@ -5,7 +5,7 @@
     background-color: #2e0041;
 }
 
-.svg_fon{
+.svg_fon, .svg_fon_1, .svg_fon_2{
     margin: 1% 3% 1% 3%;
     width: 150px;
     height: 40px;
@@ -17,5 +17,143 @@
 }
 
 .svg_fon:hover{
+    background-color: #f2deff;
+}
+.svg_fon_1:hover{
+    background-color: #f2deff;
+}
+.svg_fon_2:hover{
+    background-color: #f2deff;
+}
+
+.svg_fon_1{
+    position: absolute;
+    border: none;
+    top: 155px;
+    left: 300px;
+    z-index: 1;
+}
+
+.svg_fon_2{
+    position: absolute;
+    border: none;
+    top: 155px;
+    left: 300px;
+    z-index: 2;
+}
+
+.svg_fon_1:focus{
+    opacity: 0;
+    transition: 1s;
+    z-index: 1;
+}
+
+.svg_fon_2:focus{
+    opacity: 0;
+    transition: 2s;
+    z-index: 0;
+}
+
+.background_Animation{
+    background-image: url(subtle-prism.svg);
+    width: 100%;
+    height: 400px;
+    animation: scroll 60s infinite linear;
+}
+
+  @keyframes scroll {
+    100%{
+     background-position: 3000px 0px;
+   }
+}
+
+.gorod_Animation{
+    background-image: url(1501971588.svg);
+    width: 100%;
+    height: 380px;
+    animation: scroll1 70s infinite linear;
+}
+
+@keyframes scroll1 {
+    100%{
+     background-position: 3000px 0px;
+   }
+}
+
+.city_Animation{
+    background-image: url(city_skyline.svg);
+    width: 100%;
+    height: 380px;
+    animation: scroll 30s infinite linear;
+}
+
+.sydney_Animation{
+    background-image: url(sydney_skyline.svg);
+    position: absolute;
+    top: 285px;
+    width: 100%;
+    height: 380px;
+    animation: scroll 80s infinite linear;
+}
+@keyframes scroll3 {
+    100%{
+     background-position: 3000px 0px;
+   }
+}
+
+/*-----------------------------------
+.box__gif{
+    width: 100%;
+    height: 200px;
     background-color: #9163fd;
 }
+
+.fon__1 {
+    animation-duration: 3s ;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: -20%;
+      width: 100%;
+    }
+  }
+*/
+
+.gorod{
+    margin: 4% 2% 4% 2%;
+    padding: 3%;
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+    border: 5px solid black;
+    background-color: antiquewhite;
+}
+
+.gorod__btn {
+    position: relative;
+    padding: 0%;
+    border: 0px;
+    background-color: antiquewhite;
+  }
+  .gorod__btn .gorod__info {
+    display: none;
+    position: absolute;
+    background-color: #bd6262;
+    border-radius: 10px;
+    padding: 2% 5% 2% 5%;
+    top: -40%;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+  }
+  .gorod__btn:focus .gorod__info {
+    display: block;
+  }
